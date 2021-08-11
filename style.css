@@ -34,7 +34,7 @@ nav a {
     text-decoration: none;
 }
 
-section {
+.hero {
     padding: 170px 30px;
     background-image: url(frog.jpg);
     background-size: cover;
@@ -47,7 +47,7 @@ h1 {
     font-family: 'Comfortaa', cursive;
 }
 
-section p {
+.hero p {
     color: cornsilk;
     max-width: 40%;
     margin-top: 30px;
@@ -59,4 +59,78 @@ footer {
     background: cornsilk;
     color: darkkhaki;
     padding: 20px 50px;
+}
+
+.card img {
+    width: 70px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.card {
+    width: 20%;
+}
+
+h2 {
+    color: rgb(4, 83, 31);
+    font-family: 'Comfortaa', cursive;
+    padding: 20px;
+}
+
+.card h3 {
+    color: rgb(12, 99, 45);
+    padding: 20px 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+.service {
+    padding: 50px;
+    background: rgb(255, 234, 139);
+    text-align: center;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    nav a {
+        margin: 0 10px;
+    }
+}
+
+@media(max-width: 600px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .hero p {
+        max-width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .hero {
+        padding: 50px 30px;
+    }
+    button {
+        margin-left: 0;
+    }
+    footer {
+        text-align: center;
+    }
 }
